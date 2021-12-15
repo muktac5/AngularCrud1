@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@media screen and (max-width: 800px) {
+    div .casechange{
+        margin:auto;
+        border: 3px solid blue;
+        background-color:ivory;
+        align:center;
+        padding: 5px;
+        width: 1100px;
+        font-style: italic;
+        font-size: large;
+    
+    }
+}
+div h2{
+    color:brown;
+}
+
+.button123{
+    padding: 0 6px 0 6px;
+    margin: 16px 18px 16px 18px;
+    font-size:25px;
+    text-align:center; 
+}
+
+
+.button1{
+    padding: 0 6px 0 6px;
+    margin: 16px 18px 16px 18px;
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.customer{
+    background-color: red;
+}
+
+.employee{
+    background-color: blue;
+}
+
+
+#input1{
+    width:200px;
+}
+
+#input2{
+    width: 500px;
+}
+
+.valid {
+    color: blue;
+}
+
+.invalid {
+        color: red;
+}
+
+input{
+    text-align: center;
+}
+

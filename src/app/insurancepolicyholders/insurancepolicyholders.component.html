@@ -1,0 +1,77 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h1 style="color:aliceblue">CRUD APPLICATION WITH JSON SERVER</h1>
+        <div class="d-flex">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add New Policy Record</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table table-bordered table-hover mt-3">
+    <thead>
+        <th scope="col">Insurance Policy No</th>
+        <th scope="col">Policy Holders Name</th>
+        <th scope="col">Policy Amount</th>
+        <th scope="col">Amount for EMI</th>
+        <th scope="col">Nominees name</th>
+        <th scope="col">Actions</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>160001</td>
+            <td>Mukta</td>
+            <td>1300000</td>
+            <td>13000</td>
+            <td>M Padma</td>
+            <td>
+                <button class="btn btn-info">Edit</button>
+                <button class="btn btn-danger mx-3">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add new policy record</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="Insurance Policy No">Insurance Policy No</label>
+                  <input type="number" formControlName="policyNo" class="form-control" id="Insurance Policy No" placeholder="Enter Policy No.">
+                </div>
+                <div class="mb-3">
+                  <label for="Policy Holders Name">Policy Holders Name</label>
+                  <input type="text" formControlName="name" class="form-control" id="Policy Holders Name" placeholder="Enter Full Name">
+                </div>
+                <div class="mb-3">
+                  <label for="Policy Amount">Policy Amount</label>
+                  <input type="number" formControlName="amount" class="form-control" id="Policy Amount" placeholder="Enter Policy Amount">
+                </div>
+                <div class="mb-3">
+                  <label for="Amount for EMI">Amount for EMI</label>
+                  <input type="number" formControlName="EMIAmount" class="form-control" id="Amount for EMI" placeholder="Enter amount for EMI">
+                </div>
+                <div class="mb-3">
+                  <label for="Nominees Name">Nominees Name</label>
+                  <input type="text" formControlName="nominee" class="form-control" id="Nominees Name" placeholder="Enter the nominee's name">
+                </div>
+                <div class="mb-3">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Active Policy</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Add</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
